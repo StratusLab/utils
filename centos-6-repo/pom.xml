@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>centos-6-repo-rpm</artifactId>
+  <name>CentOS 6 Repo (RPM)</name>
+
+  <packaging>rpm</packaging>
+
+  <parent>
+    <groupId>eu.stratuslab.utils</groupId>
+    <artifactId>utils</artifactId>
+    <version>14.06.0-SNAPSHOT</version>
+  </parent>
+
+  <properties> 
+    <maven.build.timestamp.format>yyyyMMdd.HHmmss</maven.build.timestamp.format> 
+    <RELEASE>0.${maven.build.timestamp}.${package.os}</RELEASE>
+  </properties>
+
+  <build>
+    
+    <plugins>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <release>${RELEASE}</release>
+          <summary>StratusLab CentOS 6 Repository</summary>
+          <name>stratuslab-centos6-repo</name>
+          <group>System</group>
+          <vendor>StratusLab</vendor>
+          <packager>StratusLab</packager>
+          <copyright>Apache</copyright>
+          <url>http://www.stratuslab.eu/</url>
+          <needarch>noarch</needarch>
+          <description>
+            Configuration for StratusLab CentOS 6 yum repository
+          </description>
+
+          <defaultDirmode>755</defaultDirmode>
+          <defaultFilemode>644</defaultFilemode>
+          <defaultGroupname>root</defaultGroupname>
+          <defaultUsername>root</defaultUsername>
+
+          <mappings>
+
+	    <mapping>
+	      <directory>/etc/yum.repos.d</directory>
+	      <directoryIncluded>false</directoryIncluded>
+	      <sources>
+		<source>
+		  <location>src/main/resources</location>
+		</source>
+	      </sources>
+	    </mapping>
+
+          </mappings>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>
