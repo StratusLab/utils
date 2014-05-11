@@ -81,6 +81,16 @@ service nginx restart || true
 	      </sources>
 	    </mapping>
 
+	    <mapping>
+	      <directory>/usr/share/nginx/stratuslab</directory>
+	      <directoryIncluded>false</directoryIncluded>
+	      <sources>
+		<source>
+		  <location>src/main/html</location>
+		</source>
+	      </sources>
+	    </mapping>
+
           </mappings>
         </configuration>
       </plugin>
