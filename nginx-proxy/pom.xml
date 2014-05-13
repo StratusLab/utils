@@ -44,7 +44,7 @@
 
           <postinstallScriptlet>
             <script>
-/etc/stratuslab/nginx-proxy/generate-certificate || true
+/etc/stratuslab/nginx-proxy/generate-certificate.sh
 service nginx restart || true
 </script>
           </postinstallScriptlet>
@@ -76,7 +76,17 @@ service nginx restart || true
 	      <directoryIncluded>false</directoryIncluded>
 	      <sources>
 		<source>
-		  <location>src/main/resources/conf.d/**/*</location>
+		  <location>src/main/resources/conf.d</location>
+		</source>
+	      </sources>
+	    </mapping>
+
+	    <mapping>
+	      <directory>/usr/share/nginx/stratuslab</directory>
+	      <directoryIncluded>false</directoryIncluded>
+	      <sources>
+		<source>
+		  <location>src/main/html</location>
 		</source>
 	      </sources>
 	    </mapping>

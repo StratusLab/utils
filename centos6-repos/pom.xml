@@ -28,7 +28,7 @@
         <configuration>
           <release>${RELEASE}</release>
           <summary>StratusLab CentOS 6 Repository</summary>
-          <name>stratuslab-centos6-repo</name>
+          <name>stratuslab-centos6-repos</name>
           <group>System</group>
           <vendor>StratusLab</vendor>
           <packager>StratusLab</packager>
