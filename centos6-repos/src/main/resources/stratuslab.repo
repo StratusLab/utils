@@ -25,3 +25,12 @@ name=StratusLab-Snapshots
 baseurl=http://yum.stratuslab.eu/snapshots/centos-6
 enabled=0
 gpgcheck=0
+
+#
+# Raw test packages for the StratusLab cloud distribution.
+#
+[StratusLab-Tests]
+name=StratusLab-Tests
+baseurl=http://ci.stratuslab.eu/yum/snapshots/centos/
+enabled=0
+gpgcheck=0
