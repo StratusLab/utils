@@ -1,0 +1,10 @@
+#
+# Development packages of the StratusLab cloud distribution.
+# These are development snapshots and may not work.  Use 
+# with caution.
+#
+[StratusLab-Snapshots]
+name=StratusLab-Snapshots
+baseurl=http://yum.stratuslab.eu/snapshots/centos-6
+enabled=0
+gpgcheck=0

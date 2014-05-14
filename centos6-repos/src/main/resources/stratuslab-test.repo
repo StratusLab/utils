@@ -1,0 +1,8 @@
+#
+# Raw test packages for the StratusLab cloud distribution.
+#
+[StratusLab-Tests]
+name=StratusLab-Tests
+baseurl=http://ci.stratuslab.eu/yum/snapshots/centos/
+enabled=0
+gpgcheck=0

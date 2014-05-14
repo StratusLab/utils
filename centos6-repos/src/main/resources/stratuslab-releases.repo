@@ -1,0 +1,8 @@
+#
+# Latest stable release of the StratusLab cloud distribution.
+#
+[StratusLab-Releases]
+name=StratusLab-Releases
+baseurl=http://yum.stratuslab.eu/releases/centos-6
+enabled=1
+gpgcheck=0
