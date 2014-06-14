@@ -1,0 +1,1 @@
+* * * * * root (echo '  ID NAME               RVM   TCPU   FCPU   ACPU   TMEM   FMEM   AMEM   STAT'; su - oneadmin -c "onehost list" | sed '1d') > /usr/share/nginx/stratuslab/load.txt
