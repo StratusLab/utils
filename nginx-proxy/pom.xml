@@ -22,7 +22,7 @@
         <extensions>true</extensions>
         <configuration>
           <release>${RELEASE}</release>
-          <summary>StratusLab nginx Configuation</summary>
+          <summary>StratusLab nginx Configuration</summary>
           <name>stratuslab-nginx-cfg</name>
           <group>System</group>
           <vendor>StratusLab</vendor>
