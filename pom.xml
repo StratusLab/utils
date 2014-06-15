@@ -3,7 +3,7 @@
  
   <groupId>eu.stratuslab.utils</groupId>
   <artifactId>utils</artifactId>
-  <version>14.06.0_RC4-SNAPSHOT</version>
+  <version>14.06.0_RC4</version>
   <name>Utils (POM)</name>
 
   <url>https://github.com/StratusLab/utils</url>
@@ -47,7 +47,7 @@ of StratusLab services.
   <scm>
     <connection>scm:git:ssh://git@github.com/StratusLab/utils.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/StratusLab/utils.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>utils-14.06.0_RC4</tag>
   </scm>
 
   <repositories>
